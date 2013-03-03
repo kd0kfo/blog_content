@@ -1,0 +1,11 @@
+Packet - Soundcard Interface
+=============================
+
+After some testing and reading, I finished making the cables to connect my radios to my computer through the sound card. Both the scanner and the hand held speaker outputs use the same attenuation circuit (top of diagram). However, the hand held uses a 2.5mm plug instead of the 3.5 mm plug used everywhere else in both circuits. The Radio speaker (Rx) and transmit (Tx) must share the same ground, indicated by "1" on in the diagram. Additionally, the transmit is initiated when pin "1" on the transmit plug goes to ground, as indicated by the PTT switch in the diagram. To me this seemed counter-intuitive, but that is the way it works. I would have expected the outer shield of the cable to remain grounded, but then again, I suppose it does not matter when you are not transmitting.
+
+In both cases, an attenuator is used. Both input sides of the two circuits require lower voltage levels than is used for the output of the devices. Therefore a 10:1 attenuator is used for the Rx and 100:1 is used for Tx, on the computer side of the transformer. The transformer is used to isolate the different grounds that may exist between the radio and the sound card. From my use thus far, this is not a problem with the hand held radio. I've only operated it from the battery, so I do not know about the battery charger. It could have the same problem as the scanner's power supply. This power supply is not as stable as it could be and there is some harmonic humming. However, since the software TNC is quite sensative, I can turn the volume down enough on the microphone input that I do not have to listen to the radio while it is plugged into the computer. Additionally, at these levels, the humming from the scanner does not cause any problems with the packet reception and the scanner continuously runs as an igate.
+
+The transmit circuit has only been tested with MCW so far. Reception by the scanner has been pretty good. The next step will be to try it with packet, as the deviation may need to be more finely adjusted than with simple MCW. Also, the circuit currently uses a momentarily closed switch for the PTT. This is less than ideal for packet and a computer controlled PTT circuit will be used later.
+
+.. image:: http://radio.davecoss.com/images/puxing_to_soundcard.png
+     :align: center

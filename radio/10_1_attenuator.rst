@@ -1,0 +1,8 @@
+10:1 Attenuator
+=================
+
+Yesterday, I made an attenuator to connect my scanner to my computer. The speaker output is a much higher voltage than the microphone input of the computer can handle. Look at it this way, the speaker output will drive a speaker. Too high of a voltage. So I made this to bring the voltage down to a better level for the sound card. This includes a voltage divider that lowers the voltage. Also, after the voltage divider is a 1:1 transformer to isolate the different grounds of the two devices. Each end is a 1/8" speaker plug. The radio end is mono, because the radio itself is mono anyways. The output end is stereo. This was an arbitrary choice, but if Line-In is used instead of microphone, two radios could be hooked up to the sound card, with one on each channel. So, if I decide to do that later, I can use the same cable, just altering the middle portion.
+
+This was easy to make and compared to crowded PC boards, soldering just the wires was a nice change. Despite the transformer (or because of?), there is an annoying "buzz". Though I suspect the source is the two-prong power supply.
+
+I tested it out using Hamscope. I found this to be a great program. With the installation of extra programs, listed on the website, the program will "translate" different modes, ranging from CW to Packet/APRS. I tried both CW and APRS. CW was problematic because the only CW source I could find was a local repeater, and the aforementioned "buzz" sat right on top of the CW signal. APRS was better and although there was no traffic on new year's day, packets were successfully received by the computer. And of course, I could listen to voice through the speakers. That sounded just fine; the buzz was drowned out by the voice levels.
