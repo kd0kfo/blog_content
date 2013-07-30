@@ -3,7 +3,7 @@ Description
 
 PICOS, or PIC Operating System, was created as a multitasking, programmable operating system for the PIC (http://en.wikipedia.org/wiki/PIC_microcontroller) microcontroller. The operating system has been designed with the PIC 18F2550 in mind, but should be easily portable to other chips. Additionally, the operating system kernel should be easily ported to other types of microcontrollers, such as Atmel, since all processor specific code is factored out of the kernel, see layer diagram below. The PICOS kernel and the emulator were written in C (http://en.wikipedia.org/wiki/C_(programming_language)). Hardware drivers for the Computer-Radio interface (http://electronics.davecoss.com/interface) were written in C for use with the Hi-Tech (http://www.htsoft.com/) C compiler. Apropos of the compiler, it is worth noting that the kernel itself does not contain processor specfic code and header includes, such as Hi-Tech's htc.h; all of the processor specific code should be placed in the hardware driver. PICOS uses its own filesystem, PICFS, which may be mounted using FUSE (http://fuse.sourceforge.net/). Also, PICOS can execute user programs in a custom machine code, for which the PICLANG programming language and compilers were created.
 
-.. image:: picos_layers.png
+.. image:: http://blog.davecoss.com/content/electronics/interface/picos_layers.png
 
 Kernel
 ======
@@ -56,7 +56,7 @@ Emulator
 
 A running PICOS circuit may be simulated using emulator code. Below is a screenshot of the emulator. The emulator code replaces hardware code, such as putch and getch, with system calls to interact with the terminal. A filesystem image is required. SRAM and EEPROM storage is simulated using files. This allows the user to read the contents of the simulated system's memory. The target OS of the emulator is Linux and requires the ncurses library for the display. The display shows the contents of the LCD buffer, program memory and a debugger information, if the debug flag has been set.
 
-.. image:: PICOS_Emulator.png
+.. image:: http://blog.davecoss.com/content/electronics/interface/PICOS_Emulator.png
 
 Scheduler
 =========

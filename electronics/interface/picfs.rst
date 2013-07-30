@@ -22,7 +22,7 @@ Each file system has one file known as the "raw file". This is a virtual file th
 
 By using one, simple linked list as a writable file for the PICOS device, the file writing process and block allocation has been greatly simplified, thus requiring very little firmware memory. At the same time, since user space programs have access to the raw file. Therefore, complex file manipulation and creation has been abstracted "up" to user space programs, which reside in secondary storage rather than firmware space, which is much less abundant.
 
-.. image:: picfs.png
+.. image:: http://blog.davecoss.com/content/electronics/interface/picfs.png
 
 Each file has one or more inodes. The inode contain the block numbers of the blocks that contain the data of the file. If the number of data blocks exceeds the size of the inode, one of the bytes of the inode points to another inode which contains pointer to more data blocks. Thus, file data block pointers are stored in a linked list of inodes. This structure is shown in the diagram to the right.
 
