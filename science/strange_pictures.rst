@@ -3,7 +3,7 @@ When science goes bad: Strange Pictures
 
 Generally, a good way of understanding what is going on in a program is to represent data graphically. With my convolution program, I get a lot of strange looking images, which may or may not be what I was looking for. Here is one example:
 
-.. image:: http://davecoss.com/album/albums/userpics/10001/normal_peanut.jpg
+.. image:: http://photos.davecoss.com/misc/reduced_peanut.jpg
 
 The Peanut
 
