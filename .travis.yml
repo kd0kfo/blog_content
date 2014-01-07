@@ -1,0 +1,5 @@
+install:
+    - pip install docutils
+script:
+    - find . -name \*.rst -exec rst2html.py {} 1>/dev/null 2>>warnings.log \;
+    - if [[ -s warnings.log ]];then exit 1;fi
