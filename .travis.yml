@@ -2,7 +2,7 @@ language: python
 python:
     - "2.7"
 install:
-    - sudo pip install docutils --user
+    - sudo pip install docutils 
 script:
-    - find . -name \*.rst -exec python /home/travis/.local/bin/rst2html.py {} 1>/dev/null 2>>warnings.log \;
+    - find . -name \*.rst -exec rst2html.py {} 1>/dev/null 2>>warnings.log \;
     - if [[ -s warnings.log ]];then cat warnings.log ; exit 1;fi
