@@ -4,5 +4,5 @@ python:
 install:
     - sudo pip install docutils --user
 script:
-    - find . -name \*.rst -exec /home/travis/.local/bin/rst2html.py {} 1>/dev/null 2>>warnings.log \;
+    - find . -name \*.rst -exec python /home/travis/.local/bin/rst2html.py {} 1>/dev/null 2>>warnings.log \;
     - if [[ -s warnings.log ]];then cat warnings.log ; exit 1;fi
