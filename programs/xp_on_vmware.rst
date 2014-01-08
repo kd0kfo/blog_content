@@ -4,7 +4,7 @@ XP on VMWare
 Ok, so this is yet another experiment in VMWare [1]_, except this time I will better outline the install process.
 
 
-.. image:: http://davecoss.com/album/albums/userpics/10001/normal_setup_install.jpg
+.. image:: http://photos.davecoss.com/misc/reduced_setup_install.jpg
      :align: center
      :alt: beginning of vmware xp install
 

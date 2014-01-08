@@ -1,7 +1,7 @@
 Launchy
 ========
 
-.. image:: http://davecoss.com/album/albums/userpics/10001/launchy.png
+.. image:: http://photos.davecoss.com/misc/reduced_launchy.png
      :alt: Launchy Screen Shot
      :align: center
 
