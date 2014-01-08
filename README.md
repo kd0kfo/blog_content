@@ -8,4 +8,4 @@ The "master" branch is the leading development branch, while the "current" branc
 HTML Compilation Status
 -----------------------
 
-.. image:: https://travis-ci.org/kd0kfo/blog_content.png?branch=master   :target: https://travis-ci.org/kd0kfo/blog_content
+[![Build Status](https://travis-ci.org/kd0kfo/blog_content.png?branch=master)](https://travis-ci.org/kd0kfo/blog_content)
