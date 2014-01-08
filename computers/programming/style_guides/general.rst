@@ -6,6 +6,11 @@ About
 
 This style guide should apply to language-agnostic programming techniques and practices. For language-specific style, see the style guide for that specific language.
 
+Case
+----
+
+For easy of reading, use underscores between words in a variable name. There is one exception to this and that is java. See Case in the Java Code Style Guide for details.
+
 Version Numbers
 ---------------
 
