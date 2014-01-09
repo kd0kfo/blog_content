@@ -1,6 +1,11 @@
 Java Code Style Guide
 =====================
 
+About
+-----
+
+This is a guide on how to write java code. See also the General Code Style Guide.
+
 Case
 ----
 
