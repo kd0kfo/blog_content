@@ -11,7 +11,11 @@ Definitions
 
 * If a pointer is being defined as null, use NULL. If NULL is not defined, define it as (void*)0.
 
-  * Example: double *foo = NULL;
+  * Example:
+
+.. code:: c
+
+        double *foo = NULL;
 
 Libraries
 ---------
@@ -29,8 +33,16 @@ Pointers
 
 * When declaring a pointer or multiple on the same line with other declared variable, put the asterisk next to the variable name without a space between it and the variable name.
 
-  * Example: int *x,*y,z,q;
+  * Example:
+
+.. code:: c
+
+        int *x, *y, z, q;
 
 * When a pointer is declared by itself, put the asterisk next to variable name.
 
-  * Example: int *x;
+  * Example:
+
+.. code:: c
+
+        int *x;
